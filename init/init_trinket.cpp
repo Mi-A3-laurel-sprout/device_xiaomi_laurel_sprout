@@ -105,4 +105,7 @@ void vendor_load_properties()
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
 
     vendor_load_device_properties();
+
+    // Misc
+    property_override("ro.apex.updatable", "false");
 }
