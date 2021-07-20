@@ -127,6 +127,7 @@ debug.sf.auto_latch_unsignaled=true
 debug.sdm.support_writeback=0
 ro.opengles.version=196610
 debug.sf.disable_client_composition_cache=1
+debug.sf.layer_caching_active_layer_timeout_ms=1000
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
