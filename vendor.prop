@@ -71,6 +71,7 @@ vendor.audio.feature.ras.enable=true
 vendor.audio.feature.record_play_concurency.enable=false
 vendor.audio.feature.src_trkn.enable=true
 vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.offload.buffer.size.kb=256
 vendor.audio.feature.ssrec.enable=true
 vendor.audio.feature.usb_offload.enable=true
 vendor.audio.feature.usb_offload_burst_mode.enable=false
