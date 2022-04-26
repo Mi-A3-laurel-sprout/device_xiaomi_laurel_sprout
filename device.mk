@@ -229,7 +229,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.config.avoid_gfx_accel=true
+    ro.config.avoid_gfx_accel=true \
+    debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true
 
 # DRM
 PRODUCT_PACKAGES += \
