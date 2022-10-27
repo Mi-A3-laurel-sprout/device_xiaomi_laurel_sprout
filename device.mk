@@ -233,6 +233,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.config.avoid_gfx_accel=true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
