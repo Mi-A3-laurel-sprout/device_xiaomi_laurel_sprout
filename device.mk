@@ -42,9 +42,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
     android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-service \
-    bootctrl.trinket \
-    bootctrl.trinket.recovery
+    android.hardware.boot@1.1-service
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
