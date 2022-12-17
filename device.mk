@@ -126,6 +126,9 @@ PRODUCT_ODM_PROPERTIES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.audio.feature.compr_voip.enable=true
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.audio.offload.buffer.size.kb=256
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
