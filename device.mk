@@ -462,9 +462,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/display \
     hardware/qcom/media
 
-PRODUCT_PACKAGES += \
-    GalleryGo2
-
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPALaurelFrameworks \
