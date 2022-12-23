@@ -899,4 +899,39 @@
          <instance>default</instance>
     </interface>
 </hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.drm</name>
+    <interface>
+        <name>IDrmFactory</name>
+        <instance>clearkey</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.vibrator</name>
+    <interface>
+        <name>IVibrator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.hostapd</name>
+    <interface>
+        <name>IHostapd</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.supplicant</name>
+    <interface>
+        <name>ISupplicant</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.qti.hardware.wifi.supplicant</name>
+    <interface>
+        <name>ISupplicantVendor</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
