@@ -366,10 +366,8 @@ PRODUCT_COPY_FILES += \
 TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
     audio \
-    av \
     bt \
     init \
-    media-legacy \
     overlay \
     usb \
     vibrator \
