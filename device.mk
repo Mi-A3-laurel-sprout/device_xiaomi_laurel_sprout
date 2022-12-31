@@ -55,7 +55,8 @@ PRODUCT_PACKAGES += \
     XiaomiSystemUI \
     UdfpsSystemUI \
     RCMSystemUI \
-    RCMFramework
+    RCMFramework \
+    ApertureOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
