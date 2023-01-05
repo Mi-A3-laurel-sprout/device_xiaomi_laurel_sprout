@@ -238,6 +238,13 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.renderengine.backend=skiaglthreaded \
     renderthread.skia.reduceopstasksplitting=true
 
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.sf.color_mode=9 \
+    persist.sys.sf.color_saturation=1.0 \
+    persist.sys.sf.native_mode=2 \
+    vendor.display.qdcm.disable_factory_mode=1 \
+    vendor.display.qdcm.mode_combine=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
@@ -466,4 +473,5 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPALaurelFrameworks \
-    AOSPALaurelSystemUI
+    AOSPALaurelSystemUI \
+    LaurelFrameworks
