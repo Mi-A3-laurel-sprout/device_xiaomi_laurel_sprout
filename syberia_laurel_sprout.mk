@@ -19,8 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Syberia stuff
-$(call inherit-product, vendor/syberia/common.mk)
+# Inherit some common statix stuff
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +29,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := syberia_laurel_sprout
+PRODUCT_NAME := statix_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -49,9 +50,7 @@ PRODUCT_PACKAGES += \
 #    GCamGo
     
 # Syberia
-SYBERIA_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
-FORCE_OTA := true
+TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := true
 EXTRA_UDFPS_ANIMATIONS := true

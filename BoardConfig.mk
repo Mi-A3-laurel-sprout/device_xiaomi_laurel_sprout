@@ -79,9 +79,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 
-# QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 

@@ -292,6 +292,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/gps/etc/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# HALs
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := trinket
+
 # Healthd
 #PRODUCT_PACKAGES += \
 #    android.hardware.health@2.1-impl:64 \
