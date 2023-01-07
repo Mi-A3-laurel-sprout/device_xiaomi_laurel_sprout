@@ -390,6 +390,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Pixel Launcher
+INCLUDE_PIXEL_LAUNCHER := true
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.laurel_sprout-libperfmgr \
