@@ -56,7 +56,8 @@ PRODUCT_PACKAGES += \
     UdfpsSystemUI \
     RCMSystemUI \
     RCMFramework \
-    ApertureOverlay
+    ApertureOverlay \
+    LaurelCarrierConfigOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
