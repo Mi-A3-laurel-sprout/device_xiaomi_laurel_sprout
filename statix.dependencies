@@ -1,0 +1,8 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "LineageOS/android_packages_apps_Aperture",
+        "target_path":  "packages/apps/Aperture",
+        "revision":     "lineage-20.0"
+    }
+]
