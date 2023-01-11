@@ -176,7 +176,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libstdc++.vendor \
     libcamera2ndk_vendor \
-    libdng_sdk.vendor
+    libdng_sdk.vendor \
+    libgui_shim
 
 # Consumerir
 PRODUCT_PACKAGES += \
