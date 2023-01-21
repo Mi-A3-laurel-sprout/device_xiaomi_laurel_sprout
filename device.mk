@@ -476,3 +476,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     AOSPALaurelFrameworks \
     LaurelFrameworks
+
+# Force voLTE/voWIFI/viLTE
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1
