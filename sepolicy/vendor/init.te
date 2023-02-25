@@ -9,3 +9,5 @@ allow init sysfs_fod:file { setattr };
 allow init vendor_sysfs_graphics:lnk_file { read };
 
 set_prop(init, vendor_camera_prop)
+
+allow init sysfs_displayfeatures:file { setattr };

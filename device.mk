@@ -51,7 +51,7 @@ TARGET_BOARD_PLATFORM := trinket
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
     android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-service 
+    android.hardware.boot@1.1-service
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -69,6 +69,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     XiaomiFrameworks \
     XiaomiSystemUI \
+    DisplayFeaturesLAUREL \
     UdfpsSystemUI \
     RCMSystemUI \
     RCMFramework \
@@ -216,7 +217,7 @@ PRODUCT_COPY_FILES += \
 # Config Store
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
-    android.hardware.configstore@1.1-service 
+    android.hardware.configstore@1.1-service
 
 # Display
 PRODUCT_PACKAGES += \
@@ -264,6 +265,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.qdcm.disable_factory_mode=1 \
     vendor.display.qdcm.mode_combine=1
 
+# DisplayFeatures
+PRODUCT_PACKAGES += \
+    DisplayFeatures
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
@@ -310,7 +315,7 @@ ifneq ($(AB_OTA_UPDATER),true)
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery
 endif
-  
+
 # HIDL VNDK
 $(foreach target, $(shell cat $(LOCAL_PATH)/configs/vndk/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
 
