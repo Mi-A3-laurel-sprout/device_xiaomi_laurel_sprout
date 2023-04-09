@@ -112,7 +112,6 @@ vendor.camera.not.cts.apk=1
 vendor.camera.not.ctsverify.apk=1
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM6125
 
 # Display
