@@ -121,6 +121,11 @@ TARGET_USES_DRM_PP := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Fingerprint
+TARGET_HAS_UDFPS := true
+TARGET_USES_FOD_ZPOS := true
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.laurel_sprout
+
 # Gestures
 TARGET_TAP_TO_WAKE_EVENT_NODE  := "/dev/input/event2"
 
