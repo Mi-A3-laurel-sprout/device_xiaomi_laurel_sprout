@@ -72,4 +72,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     
     <!-- Use framework FOD dimming instead of kernel dimming -->
     <bool name="config_udfpsFrameworkDimming">true</bool>
+
+    <!-- Doze: does the single tap sensor need a proximity check? -->
+    <bool name="doze_single_tap_proximity_check">true</bool>
+
+    <!-- Doze: does the double tap sensor need a proximity check? -->
+    <bool name="doze_double_tap_proximity_check">true</bool>
+
+    <!-- Doze: does the pickup sensor need a proximity check? -->
+    <bool name="doze_pickup_event_proximity_check">true</bool>
 </resources>
