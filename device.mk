@@ -392,7 +392,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Pixel Launcher
-INCLUDE_PIXEL_LAUNCHER := true
+#INCLUDE_PIXEL_LAUNCHER := true
 
 # Power
 PRODUCT_PACKAGES += \
