@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_laurel_sprout.mk
+    $(LOCAL_DIR)/statix_laurel_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_laurel_sprout-user \
-    evolution_laurel_sprout-userdebug \
-    evolution_laurel_sprout-eng
+    statix_laurel_sprout-user \
+    statix_laurel_sprout-userdebug \
+    statix_laurel_sprout-eng

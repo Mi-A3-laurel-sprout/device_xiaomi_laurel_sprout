@@ -51,9 +51,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
     android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-service \
-    bootctrl.trinket \
-    bootctrl.trinket.recovery
+    android.hardware.boot@1.1-service
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -327,6 +325,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/gps/etc/,$(TARGET_COPY_OUT_VENDOR)/etc)
+# HALs
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := trinket
+
+# Pixel Launcher
+INCLUDE_PIXEL_LAUNCHER := true
+
+
+
+
+
 
 # Healthd
 #PRODUCT_PACKAGES += \
@@ -375,6 +384,14 @@ PRODUCT_COPY_FILES += \
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
+# Kernel (Prebuilt)
+TARGET_PREBUILT_KERNEL := device/xiaomi/laurel_sprout/prebuilt/Image.gz-dtb
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
+
+PRODUCT_VENDOR_KERNEL_HEADERS += hardware/qcom-caf/sm8150/kernel-headers
 
 # Lights
 PRODUCT_PACKAGES += \
