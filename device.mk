@@ -409,10 +409,6 @@ TARGET_COMMON_QTI_COMPONENTS += \
     perf \
     telephony
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Retrofit Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
