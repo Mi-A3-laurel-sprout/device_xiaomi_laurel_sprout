@@ -161,9 +161,6 @@ ro.vendor.lmk.force_inkernel_lmk=true
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 
-# Pasr
-vendor.power.pasr.enabled=true
-
 # Pre-rendering
 ro.vendor.perf.scroll_opt=true
 
